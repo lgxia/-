@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/shoppingCat/shoppingCat"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "老梁烧烤",
+    "navigationBarBackgroundColor": "#fffabd",
+    "backgroundColor": "#FAEBD7",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#fffabd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/shouye.png",
+        "selectedIconPath": "static/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/xinxi.png",
+        "selectedIconPath": "static/xinxi.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shoppingCat/shoppingCat",
+        "iconPath": "static/xinxi.png",
+        "selectedIconPath": "static/xinxi.png",
+        "text": "购物车"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

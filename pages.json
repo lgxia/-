@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "信息",
+				"navigationBarBackgroundColor": "#fffabd",
+				"h5": {
+					"titleNView": {
+						"backgroundColor": "#fffabd",
+						"titleText": "信息"
+					}
+				}
+			}
+			},
+			
+			{
+				"path": "pages/shoppingCat/shoppingCat",
+				"style": {
+					"navigationBarTitleText": "搜索"
+				}
+			}
+			
+		],
+		"globalStyle": {
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "老梁烧烤",
+			"navigationBarBackgroundColor": "#fffabd",
+			"backgroundColor": "#FAEBD7",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+		},
+		"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#3cc51f",
+			"borderStyle": "black",
+			"backgroundColor": "#fffabd",
+			"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/shouye.png",
+				"selectedIconPath": "static/shouye.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/message/message",
+				"iconPath": "static/xinxi.png",
+				"selectedIconPath": "static/xinxi.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/shoppingCat/shoppingCat",
+				"iconPath": "static/xinxi.png",
+				"selectedIconPath": "static/xinxi.png",
+				"text": "购物车"
+			}
+			]
+		},
+		"condition": { //模式配置，仅开发期间生效
+			"current": 0, //当前激活的模式（list 的索引项）
+			"list": [{
+					"name": "首页", //模式名称
+					"path": "pages/index/index", //启动页面，必选
+					"query": "id=90" //启动参数，在页面的onLoad函数里面得到。
+				},
+				{
+					"name": "信息",
+					"path": "pages/message/message"
+				},
+				{
+					"name": "购物车",
+					"path": "pages/shoppingCat/shoppingCat"
+				}
+			]
+		},
+		"uniIdRouter": {}
+	}
